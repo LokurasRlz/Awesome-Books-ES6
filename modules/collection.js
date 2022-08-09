@@ -12,6 +12,8 @@ export default class Collection {
     this.display(data);
     this.remove();
     this.populateStorage();
+    inputAuthor.value = '';
+    inputTitle.value = '';
   }
 
   remove() {

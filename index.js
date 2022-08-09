@@ -1,15 +1,14 @@
 import Collection from './modules/collection.js';
 import Book from './modules/book.js';
-/*import loadNavigation from './modules/navigation.js';*/
-/*import { DateTime } from './modules/luxon.js';*/
-import {navAdd, navContact, navList} from './modules/navigation.js';
-
-
+import { DateTime } from './modules/luxon.js';
+import { navAdd, navContact, navList } from './modules/navigation.js';
 
 const inputTitle = document.getElementById('title');
 const inputAuthor = document.getElementById('author');
 const submitBtn = document.querySelector('.add-btn');
 const dateBox = document.querySelector('.date');
+
+
 
 const dt = DateTime.now();
 dateBox.innerHTML = `${dt.monthLong}, ${dt.day}, ${dt.weekYear}, ${dt.hour}:${dt.minute}:${dt.second}`;
